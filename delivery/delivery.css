@@ -1,0 +1,113 @@
+
+body {
+    background-image: linear-gradient(to right, rgb(222, 244, 248) , #ffffff);
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+form {
+    background-color: #8f8888;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+    margin-top: 10%;
+
+}
+
+#Card {
+    margin-left: 20px;
+}
+
+.datWid {
+    width: 90%;
+}
+
+.date {
+    appearance: none;
+    width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  /* background: transparent; */
+  font-size: 1rem;
+  padding: 14px;
+}
+
+.margin {
+    margin-top: 10px;
+}
+
+.textBox {
+    margin-top: 5px;
+    border-color: aquamarine;
+
+    width: 100%;
+    height: 20px;
+
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.gift {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+.gift select option {
+    padding: 7px;
+  }
+
+  .gift select {
+    height: 20px;
+  }
+
+.input {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    width: 50%;
+  background: rgb(48, 55, 61);
+  color: #fff;
+  border: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(82, 90, 97);
+}
+
+.title {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+
+}
+
+.emptyError {
+    color: rgb(231, 10, 10);
+}

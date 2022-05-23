@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Shop</title>
+    <link rel="stylesheet" href="./delivery.css">
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="Name">Name</label><br>
+            <input name="name" class="textBox checking name red" type="text" placeholder="Name" 
+             onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+        minlength="4" required="required" onkeyup="manage(this)" >
+        </div>
+        <div class="margin">
+            <label for="Surname">Surname</label><br>
+            <input name="surname" class="textBox surName checking red" type="text" placeholder="Surname" 
+            onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+        minlength="5" required="required" onkeyup="manage(this)">
+        </div>
+        <div  class="margin datWid">
+            <label for="Deliverydate">Delivery date</label>
+            <input name="dateDel" class="textBox date date1 red " type="date"  id="userdate" min="05/16/2022" required="required" onkeyup="manage(this)">
+        </div>
+
+        <label class="title" for="Address">Address</label>
+        <div  class="margin">
+            <label for="Address">Street</label><br>
+            <input name="street" class="textBox street red" type="text" placeholder="Street" minlength="5" required="required" onkeyup="manage(this)" 
+            onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode > 47 && event.charCode < 58)">
+        </div>
+        <div  class="margin">
+            <label for="Address">House Number</label><br>
+            <input class="textBox houseN red" type="number" placeholder="House Number" 
+            min="0" oninput="validity.valid||(value='');" required="required" onkeyup="manage(this)">
+        </div>
+        <div  class="margin">
+            <label for="Address">Flat Number</label><br>
+            <input type='text' class="textBox flatN flat red"  placeholder="Flat Number" 
+            min="0" onkeypress="preventConsecutive(this, event)" aria-required="true" onkeyup="manage(this)">
+        </div>
+        <label class="title" for="Payment">Payment Method</label><br>
+        <div class="payment">
+            <input type="radio" class="radio1" id="Cash" name="fav_language" value="Cash" required onchange="manage(this)">
+            <label for="Cash">Cash</label><br>
+            <input type="radio" class="radio2" id="Card" name="fav_language" value="Card" onchange="manage(this)">
+            <label for="Card">Card</label><br>
+        </div>
+        <label class="title" for="Gift">Choose your Gift</label><br>
+        <div>
+            <input type="checkbox" class="check2"  name="check2">
+            <label for="check2">pack as a gift</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check2"  name="check2">
+            <label for="check2">add postcard</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check2"  name="check2">
+            <label for="check2">provide 2% discount to the next time</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check2"  name="check2">
+            <label for="check2">branded pen or pencil</label>
+          </div>
+        <button type="submit" id="myButton" disabled>Complete</button>
+
+    </form>
+    <script src="./delivery.js"></script>
+</body>
+</html>
