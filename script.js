@@ -23,7 +23,7 @@ header.classList.add('header')
 wraper.appendChild(header)
 const headImg = document.createElement('img')
 headImg.classList.add("headImg")
-headImg.src = "../images/book shop1.png"
+headImg.src = "./images/book shop1.png"
 headImg.alt = 'Shop image'
 header.appendChild(headImg)
 const shoptitle = document.createElement('h1')
